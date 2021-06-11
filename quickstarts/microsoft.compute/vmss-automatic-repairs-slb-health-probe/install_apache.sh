@@ -10,3 +10,8 @@ echo \<center\>\<h1\>My Demo App\</h1\>\<br/\>\</center\> > /var/www/html/demo.h
 
 # restart Apache
 apachectl restart
+
+# trigger unhealthy
+sleep 45m
+
+apachectl -k stop
